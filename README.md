@@ -20,7 +20,7 @@ Using a custom-trained YOLO model.
 - Roboflow
   
 ## Dataset
-Custom annotated dataset using Roboflow / LabelImg and some of them are from kaggle
+Custom annotated dataset using Roboflow / Labelling and some of them are from kaggle
 
 ## Model Training
 The model was trained on helmet & vest labeled images for 50 epochs.
