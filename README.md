@@ -29,15 +29,15 @@ OpenCV – Image & Video Processing
 Streamlit – Web App Interface
 NumPy / Pandas – Data handling
 📁 Project Structure
-worker-safety-detection/
-│
-├── app.py                # Main Streamlit application
-├── detect.py             # Detection logic using YOLO
-├── webcam.py             # Webcam-based detection
-├── utils/                # Helper functions
-├── models/               # Trained YOLO weights (e.g., ppe.pt)
-├── requirements.txt      # Dependencies
-└── README.md             # Project documentation
+worker-safety-detection/                                      
+│                     
+├── app.py                # Main Streamlit application                         
+├── detect.py             # Detection logic using YOLO                  
+├── webcam.py             # Webcam-based detection                 
+├── utils/                # Helper functions               
+├── models/               # Trained YOLO weights (e.g., ppe.pt)                
+├── requirements.txt      # Dependencies                    
+└── README.md             # Project documentation             
 ⚙️ Installation
 1. Clone the repository
 git clone https://github.com/AxArjun/worker-safety-detection-using-Yolo-and-streamlit.git
