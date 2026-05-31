@@ -314,6 +314,3 @@ GitHub: https://github.com/AxArjun
 
 ---
 
-# 📜 License
-
-MIT License
