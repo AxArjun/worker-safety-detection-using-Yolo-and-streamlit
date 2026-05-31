@@ -1,108 +1,319 @@
-🦺 Worker Safety Detection using YOLO & Streamlit
+# 🦺 Worker Safety Detection using YOLO & Streamlit
 
-An AI-powered workplace safety monitoring system that detects whether workers are wearing proper Personal Protective Equipment (PPE) using YOLO (You Only Look Once) and provides an interactive interface via Streamlit.
+> AI-powered workplace safety monitoring system that uses Computer Vision and Deep Learning to detect Personal Protective Equipment (PPE) compliance in real time.
 
-This project helps automate safety compliance in industries like construction, manufacturing, and mining by identifying violations in real-time.
+---
 
-🚀 Features
-🔍 Real-time PPE Detection
-Detect helmets, vests, masks, and other safety gear
-📷 Multiple Input Sources
-Image upload
-Video file processing
-Live webcam detection
-📊 Interactive Dashboard (Streamlit)
-Visual results with bounding boxes
-Easy-to-use UI
-⚠️ Violation Detection
-Identifies missing PPE
-Highlights unsafe workers
-⚡ Fast Inference with YOLO
-High accuracy and real-time performance
+# 🚀 Overview
 
-Similar systems use YOLO models to detect PPE compliance like helmets and vests in real-time workplace monitoring.
+Worker Safety Detection System is a Computer Vision application built using YOLO and Streamlit to automate workplace safety monitoring.
 
-🧠 Tech Stack
-Python
-YOLO (Ultralytics) – Object Detection
-OpenCV – Image & Video Processing
-Streamlit – Web App Interface
-NumPy / Pandas – Data handling
-📁 Project Structure
-worker-safety-detection/                                      
-│                     
-├── app.py                # Main Streamlit application                         
-├── detect.py             # Detection logic using YOLO                  
-├── webcam.py             # Webcam-based detection                 
-├── utils/                # Helper functions               
-├── models/               # Trained YOLO weights (e.g., ppe.pt)                
-├── requirements.txt      # Dependencies                    
-└── README.md             # Project documentation             
-⚙️ Installation
-1. Clone the repository
-git clone https://github.com/AxArjun/worker-safety-detection-using-Yolo-and-streamlit.git
-cd worker-safety-detection-using-Yolo-and-streamlit
-2. Create a virtual environment
-python -m venv venv
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows
-3. Install dependencies
-pip install -r requirements.txt
-📦 Model Setup
-Download or train a YOLO model (e.g., ppe.pt)
-Place it inside the models/ directory
+The system analyzes images and video streams to detect workers and verify whether mandatory safety equipment such as helmets and safety gear are being worn.
 
-YOLO models are widely used for detecting PPE like helmets, masks, and vests in safety applications.
+By leveraging real-time object detection, organizations can improve safety compliance, reduce workplace accidents, and automate industrial monitoring processes.
 
-▶️ Usage
-Run the Streamlit App
-streamlit run app.py
-Features inside the app:
-Upload image → Detect PPE
-Upload video → Frame-by-frame detection
-Use webcam → Live monitoring
-📸 How It Works
-Input image/video/webcam stream
-YOLO model processes frames
+---
+
+# 🎯 Problem Statement
+
+Industrial environments often face safety risks due to:
+
+* Missing PPE equipment
+* Human monitoring limitations
+* Large workforce supervision challenges
+* Delayed incident identification
+* Safety regulation violations
+
+Manual inspection is time-consuming and difficult to scale.
+
+This project automates safety monitoring through Artificial Intelligence and Computer Vision.
+
+---
+
+# ✨ Key Features
+
+## 🦺 PPE Detection
+
 Detects:
-Person
-Helmet / No Helmet
-Vest / No Vest
-Draws bounding boxes:
-✅ Green → Safe
-❌ Red → Violation
-Displays results in Streamlit UI
-📊 Example Use Cases
-🏗️ Construction site monitoring
-🏭 Factory worker compliance
-🚧 Industrial safety auditing
-🎥 CCTV-based surveillance systems
-⚠️ Limitations
-Requires good lighting for accurate detection
-Performance depends on model quality
-Real-time detection may need GPU for best results
-🔮 Future Improvements
-🚨 Real-time alert system (SMS / Email)
-📈 Analytics dashboard for safety reports
-🧑‍🤝‍🧑 Worker tracking & ID assignment
-☁️ Cloud deployment (AWS / Azure)
-📡 Integration with CCTV systems
-🤝 Contributing
 
-Contributions are welcome!
+* Safety Helmets
+* Safety Equipment
+* Worker Compliance
 
-Fork the repo
-Create a new branch
-Commit your changes
-Open a Pull Request
-📜 License
+---
 
-This project is licensed under the MIT License.
+## 🎥 Real-Time Detection
 
-🙌 Acknowledgements
-YOLO by Ultralytics
-OpenCV community
-Streamlit for rapid UI development
-📬 Contact
+Supports:
 
-For queries or suggestions, feel free to open an issue or connect via GitHub.
+* Live Camera Feeds
+* Video Processing
+* Image Analysis
+
+---
+
+## ⚠️ Safety Violation Detection
+
+Identifies:
+
+* Missing Helmets
+* Missing PPE
+* Non-Compliant Workers
+
+---
+
+## 📊 Visual Monitoring Dashboard
+
+Built using Streamlit to provide:
+
+* Interactive Interface
+* Detection Visualization
+* Real-Time Results
+
+---
+
+## 🤖 YOLO-Based Object Detection
+
+Uses advanced object detection models for:
+
+* Worker Identification
+* Safety Equipment Recognition
+* Workplace Monitoring
+
+---
+
+# 🏗️ System Architecture
+
+```text
+Camera Feed / Image
+          │
+          ▼
+Frame Processing
+          │
+          ▼
+YOLO Detection Model
+          │
+          ▼
+Worker Detection
+          │
+          ▼
+PPE Validation
+          │
+          ▼
+Safety Compliance Analysis
+          │
+          ▼
+Streamlit Dashboard
+          │
+          ▼
+Results & Monitoring
+```
+
+---
+
+# 🧠 AI Pipeline
+
+```text
+Input Image / Video
+          │
+          ▼
+Object Detection (YOLO)
+          │
+          ▼
+Worker Identification
+          │
+          ▼
+PPE Classification
+          │
+          ▼
+Compliance Verification
+          │
+          ▼
+Safety Violation Detection
+          │
+          ▼
+Dashboard Visualization
+```
+
+---
+
+# 🛠️ Technology Stack
+
+## Programming Language
+
+* Python
+
+## Deep Learning
+
+* YOLO
+
+## Computer Vision
+
+* OpenCV
+
+## Web Interface
+
+* Streamlit
+
+## Machine Learning
+
+* Object Detection
+* Computer Vision
+
+## Development Tools
+
+* Git
+* GitHub
+* VS Code
+
+---
+
+# 📂 Project Structure
+
+```text
+worker-safety-detection-using-Yolo-and-streamlit/
+│
+├── models/
+├── datasets/
+├── outputs/
+├── app.py
+├── requirements.txt
+├── assets/
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/AxArjun/worker-safety-detection-using-Yolo-and-streamlit.git
+```
+
+## Navigate to Project
+
+```bash
+cd worker-safety-detection-using-Yolo-and-streamlit
+```
+
+## Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+## Activate Environment
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Linux/Mac:
+
+```bash
+source venv/bin/activate
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 📊 Detection Capabilities
+
+| Feature              | Supported |
+| -------------------- | --------- |
+| Worker Detection     | ✅         |
+| Helmet Detection     | ✅         |
+| PPE Monitoring       | ✅         |
+| Image Processing     | ✅         |
+| Video Analysis       | ✅         |
+| Real-Time Monitoring | ✅         |
+
+---
+
+# 🌍 Real-World Applications
+
+### Construction Sites
+
+Monitor worker helmet compliance.
+
+### Manufacturing Plants
+
+Automate PPE inspections.
+
+### Industrial Facilities
+
+Improve workplace safety standards.
+
+### Smart Surveillance Systems
+
+Integrate AI-powered safety monitoring into existing CCTV systems.
+
+### Compliance Monitoring
+
+Reduce safety violations and improve operational awareness.
+
+---
+
+# 🚀 Future Enhancements
+
+* Multi-Camera Monitoring
+* Email/SMS Alerts
+* Incident Reporting
+* Safety Analytics Dashboard
+* Edge AI Deployment
+* Cloud-Based Monitoring
+* Worker Tracking
+* Mobile Monitoring App
+
+---
+
+# 📈 Engineering Highlights
+
+* YOLO-Based Object Detection
+* Streamlit Dashboard Development
+* Real-Time Computer Vision Pipeline
+* PPE Compliance Monitoring
+* Industrial Safety Automation
+* AI-Powered Workplace Surveillance
+
+---
+
+# 🎓 Learning Outcomes
+
+This project demonstrates:
+
+* Computer Vision
+* Deep Learning
+* Object Detection
+* Real-Time Monitoring
+* Streamlit Development
+* Industrial AI Applications
+
+---
+
+# 👨‍💻 Author
+
+**Arjun R K**
+
+GitHub: https://github.com/AxArjun
+
+---
+
+# 📜 License
+
+MIT License
