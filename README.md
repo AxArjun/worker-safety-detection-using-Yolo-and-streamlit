@@ -3,7 +3,7 @@
 > AI-powered workplace safety monitoring system that uses Computer Vision and Deep Learning to detect Personal Protective Equipment (PPE) compliance in real time.
 
 ---
-
+ 
 # 🚀 Overview
 
 Worker Safety Detection System is a Computer Vision application built using YOLO and Streamlit to automate workplace safety monitoring.
