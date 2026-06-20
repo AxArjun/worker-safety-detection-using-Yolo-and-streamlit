@@ -1,7 +1,7 @@
 # 🦺 Worker Safety Detection using YOLO & Streamlit
 
 > AI-powered workplace safety monitoring system that uses Computer Vision and Deep Learning to detect Personal Protective Equipment (PPE) compliance in real time.
-
+   
 ---
  
 # 🚀 Overview
@@ -309,7 +309,9 @@ This project demonstrates:
 # 👨‍💻 Author
 
 **Arjun R K**
-
+**Kishore S**
+** M S Darsan **
+** Muharis **
 GitHub: https://github.com/AxArjun
 
 ---
